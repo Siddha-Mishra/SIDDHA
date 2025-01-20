@@ -12,6 +12,7 @@ yarn-error.log*
 .vscode/
 .idea/
 *.swp
+.DS_Store
 
 # Build output
 out/
