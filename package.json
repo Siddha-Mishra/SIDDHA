@@ -1,0 +1,28 @@
+{
+  "name": "cph-leetcode-helper",
+  "displayName": "CPH LeetCode Helper",
+  "description": "Fetch, test, and manage LeetCode problems efficiently.",
+  "version": "1.0.0",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Programming Languages", "Testing"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.manageTestCases",
+        "title": "CPH: Manage Test Cases"
+      },
+      {
+        "command": "extension.showResults",
+        "title": "CPH: Show Test Results"
+      }
+    ]
+  },
+  "dependencies": {
+    "vscode": "^1.1.37"
+  }
+}
+
