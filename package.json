@@ -1,9 +1,10 @@
 {
-  "name": "cph-leetcode-helper",
-  "displayName": "CPH LeetCode Helper",
-  "description": "Fetch, test, and manage LeetCode problems efficiently.",
-  "version": "1.0.0",
-  "publisher": "your-name",
+  "name": "cph-vscode-extension-leetcode-helper",
+  "displayName": "CPH VS Code Extension LeetCode Helper",
+  "description": "A VS Code extension to fetch and test LeetCode problem cases locally.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "main": "./src/extension.js",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -11,21 +12,33 @@
     "Programming Languages",
     "Testing"
   ],
-  "main": "./src/extension.js",
+  "activationEvents": [
+    "onCommand:extension.fetchTestCases"
+  ],
   "contributes": {
     "commands": [
       {
-        "command": "extension.manageTestCases",
-        "title": "CPH: Manage Test Cases"
-      },
-      {
-        "command": "extension.showResults",
-        "title": "CPH: Show Test Results"
+        "command": "extension.fetchTestCases",
+        "title": "Fetch Test Cases"
       }
     ]
   },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
   "dependencies": {
+    "axios": "^1.7.9",
     "puppeteer": "^24.1.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "turndown": "^7.2.0",
     "vscode": "^1.1.37"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/vscode": "^1.80.0",
+    "eslint": "^8.40.0"
   }
 }

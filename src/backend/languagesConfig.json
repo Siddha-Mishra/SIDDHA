@@ -1,0 +1,15 @@
+{   
+    "languages":{
+    "python": {
+        "command": "python3",
+        "args": ["/Users/siddhamishra/Documents/CPH-VS-Code-Extension-LeetCode--Tinkering-Lab/src/backend/solution.py"],
+        "run": "python3 /Users/siddhamishra/Documents/CPH-VS-Code-Extension-LeetCode--Tinkering-Lab/src/backend/solution.py"
+    },
+    "cpp": {
+        "command": "g++",
+        "args": ["-o", "/Users/siddhamishra/Documents/CPH-VS-Code-Extension-LeetCode--Tinkering-Lab/src/backend/solution.out", "/Users/siddhamishra/Documents/CPH-VS-Code-Extension-LeetCode--Tinkering-Lab/src/backend/solution.cpp"],
+        "compile": "g++ /Users/siddhamishra/Documents/CPH-VS-Code-Extension-LeetCode--Tinkering-Lab/src/backend/solution.cpp -o /Users/siddhamishra/Documents/CPH-VS-Code-Extension-LeetCode--Tinkering-Lab/src/backend/solution.out ",
+        "run": "/Users/siddhamishra/Documents/CPH-VS-Code-Extension-LeetCode--Tinkering-Lab/src/backend/solution.out"
+    }
+}
+}
