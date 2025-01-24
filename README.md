@@ -1,4 +1,4 @@
-###CPH VS Code Extension (Leetcode)
+CPH VS Code Extension (Leetcode)
 
 Overview
 
@@ -30,7 +30,7 @@ Features:
   Each language has customizable compile and run commands in languageConfig.json file.
 
 
-###Technologies Used
+Technologies Used
 
 1. Programming Language: Python, Javascript
 
